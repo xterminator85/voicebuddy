@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from backend.app.models import Conversation, Message
-from ai_service import AIService
-from speech_service import SpeechService
+from .ai_service import AIService
+from .speech_service import SpeechService
 from datetime import datetime
 import uuid
 

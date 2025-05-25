@@ -1,8 +1,8 @@
 from fastapi import FastAPI, WebSocket, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from backend.app.database import engine, get_db
-from backend.app.models import Base
+from .database import engine, get_db
+from .models import Base
 from backend.app.routes import conversation, websocket
 import os
 from dotenv import load_dotenv
